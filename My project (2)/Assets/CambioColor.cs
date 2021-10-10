@@ -4,23 +4,112 @@ using UnityEngine;
 
 public class CambioColor : MonoBehaviour
 {
-    public Color color;
+    public SpriteRenderer color;
     public float r;
     public float g;
-    public float b;
-
+    public float red;
+    public float green;
+    void Start()
+    {
+        //g = -0.8f;
+        color = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
-
     }
-    public void Example()
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        r += 0.1f;
-        g += 0f;
-        b = 0f;
-        color = new Color(r, g, b);
-        print(color.gamma);
-    }
+        if (other.tag == "Horno")
+        {
+            StartCoroutine("Calentar");
+            if (r==1&&g==1)
+            {
+                StopCoroutine("Calentar");
+            }
 
+
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag== "Horno")
+        {
+            StartCoroutine("Enfriar");
+        }
+    }
+    IEnumerator Calentar()
+    {
+
+        color.color= new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.1f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.3f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.5f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.7f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 1f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 1f;
+        g = 0.1f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 1f;
+        g = 0.3f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 1f;
+        g = 0.5f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 1f;
+        g = 0.7f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 1f;
+        g = 1f;
+        color.color = new Color(r, g, 0);
+
+    }
+    IEnumerator Enfriar()
+    {
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        g = 1f;
+        r = 1f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        g = 0.7f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        g = 0.5f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        g = 0.3f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        g = 0.0f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.7f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.5f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0.3f;
+        color.color = new Color(r, g, 0);
+        yield return new WaitForSecondsRealtime(2);
+        r = 0f;
+        color.color = new Color(r, g, 0);
+    }
 }
