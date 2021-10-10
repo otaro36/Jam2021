@@ -26,10 +26,9 @@ public class CambioColor : MonoBehaviour
             StartCoroutine("Calentar");
             if (r==1&&g==1)
             {
-                StopCoroutine("Calentar");
+                r = 1.1f;
+                g = 1.1f;
             }
-
-
         }
     }
     private void OnTriggerExit2D(Collider2D other)
