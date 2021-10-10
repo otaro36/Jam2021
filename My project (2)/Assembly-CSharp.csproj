@@ -63,13 +63,14 @@
     <Compile Include="Assets\codigo\cargaGlobal.cs" />
     <Compile Include="Assets\codigo\Calor.cs" />
     <Compile Include="Assets\codigo\EscenaManager.cs" />
+    <Compile Include="Assets\codigo\Pruebas.cs" />
     <Compile Include="Assets\codigo\DagaSeleccionda.cs" />
     <Compile Include="Assets\codigo\CambioDagas.cs" />
     <Compile Include="Assets\codigo\Move.cs" />
     <Compile Include="Assets\codigo\InstanciaDaga.cs" />
     <Compile Include="Assets\codigo\CogerYsoltar.cs" />
     <Compile Include="Assets\codigo\Afilar.cs" />
-    <Compile Include="Assets\codigo\Pruebas.cs" />
+    <Compile Include="Assets\codigo\caracteristicas.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
