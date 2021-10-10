@@ -10,11 +10,12 @@ public class Afilar : MonoBehaviour
     {
         if (other.CompareTag("lomo"))
         {
-            other.GetComponentInParent<Condicion_derrota>().solides-= Random.Range(5, 10);
+            other.GetComponentInParent<caracteristicas>().filo-= Random.Range(5, 10);
         }
         if (other.CompareTag("mango"))
         {
-            other.GetComponentInParent<Condicion_derrota>().solides -= Random.Range(10, 15);
+            other.GetComponentInParent<caracteristicas>().filo -= Random.Range(10, 15);
+            
         }
         if (other.CompareTag("filo"))
         {
