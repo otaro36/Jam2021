@@ -19,7 +19,7 @@ public class CambioDagas : MonoBehaviour
     void Update()
     {
         selector.sprite = dagas[i];
-        daga.dagaSeleccionada = i;
+        
     }
     public void siguienteDagas()
     {
@@ -36,5 +36,9 @@ public class CambioDagas : MonoBehaviour
         {
             i = 0;
         }
+    }
+    public void Seleccion()
+    {
+        daga.dagaSeleccionada = i;
     }
 }

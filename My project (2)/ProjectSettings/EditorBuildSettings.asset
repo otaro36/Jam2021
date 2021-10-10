@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenSele.unity
     guid: 93a66cf88fd9d844db2effa26257cff0
+  - enabled: 1
+    path: Assets/Scenes/Game_2.unity
+    guid: 748d7205ebe136141abee8eb9a6d6db8
   m_configObjects: {}

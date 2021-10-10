@@ -56,15 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\codigo\Condicion_derrota.cs" />
-    <Compile Include="Assets\codigo\touch.cs" />
     <Compile Include="Assets\codigo\Botones.cs" />
     <Compile Include="Assets\codigo\llamar_carga.cs" />
-    <Compile Include="Assets\codigo\cargaGlobal.cs" />
     <Compile Include="Assets\codigo\RelojGeneral.cs" />
+    <Compile Include="Assets\codigo\Condicion_derrota.cs" />
+    <Compile Include="Assets\codigo\touch.cs" />
+    <Compile Include="Assets\codigo\cargaGlobal.cs" />
     <Compile Include="Assets\codigo\EscenaManager.cs" />
-    <Compile Include="Assets\codigo\CambioDagas.cs" />
     <Compile Include="Assets\codigo\DagaSeleccionda.cs" />
+    <Compile Include="Assets\codigo\CambioDagas.cs" />
+    <Compile Include="Assets\codigo\InstanciaDaga.cs" />
+    <Compile Include="Assets\codigo\CogerYsoltar.cs" />
+    <Compile Include="Assets\CambioColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -703,6 +706,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.DeviceSimulator.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.DeviceSimulator.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
@@ -717,9 +723,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.DeviceSimulator.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.DeviceSimulator.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
