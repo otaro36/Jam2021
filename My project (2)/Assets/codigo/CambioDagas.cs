@@ -19,6 +19,21 @@ public class CambioDagas : MonoBehaviour
     void Update()
     {
         selector.sprite = dagas[i];
+        if(i==0)
+        {
+            daga.red=1;
+            daga.green=0.02f;
+        }
+        else if (i==1)
+        {
+            daga.red=0.6F;
+            daga.green=0.05f;
+        }
+        else if(i==2)
+        {
+            daga.red=0.9F;
+            daga.green=0.1f;
+        }
         
     }
     public void siguienteDagas()

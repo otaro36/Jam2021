@@ -5,4 +5,6 @@ using UnityEngine;
 public class DagaSeleccionda : ScriptableObject
 {
     public int dagaSeleccionada;
+    public float red;
+    public float green;
 }
