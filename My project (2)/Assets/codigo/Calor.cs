@@ -9,28 +9,29 @@ public class Calor : MonoBehaviour
 
     public CambioColor Comparacion;
     public SpriteRenderer imagenPrueba;
+    public DagaSeleccionda colorDaga;
     public Text calorOptimo;
-    public float r;
-    public float g;
+    public int entrega;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        imagenPrueba.color=new Color(r,g,0);
+        imagenPrueba.color=new Color(colorDaga.red,colorDaga.green,0);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Comparacion.r > r&&Comparacion.g<g)
+        if (Comparacion.r > colorDaga.red&&Comparacion.g<colorDaga.green)
         {
             calorOptimo.text="calor optimo: si";
+            entrega=1;
         }
         else
         {
             calorOptimo.text="calor optimo: no";
+            entrega=2;
         }
     }
 }
