@@ -8,6 +8,7 @@ public class Afilar : MonoBehaviour
     public DagaSeleccionda filoPrueba;
     public float filo;
     int ca = 0;
+    public AudioSource mi_audio;
     public void OnTriggerEnter2D(Collider2D other)
     {
         filoPrueba.filo=filo;
@@ -22,6 +23,7 @@ public class Afilar : MonoBehaviour
         }
         if (other.CompareTag("filo"))
         {
+            mi_audio.Play();
             other.GetComponentInParent<SpriteRenderer>().sprite = cambiosSpra[0];
             filo++;
         }
