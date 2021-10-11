@@ -11,6 +11,7 @@ public class Pruebas : MonoBehaviour
     {
         if (other.CompareTag("PruebaFilo"))
         {
+            other.GetComponent<AudioSource>().Play();
             if (other.GetComponent<caracteristicas>().filo < filo)
             {
                 Debug.Log("filo gama");
@@ -26,6 +27,7 @@ public class Pruebas : MonoBehaviour
         }
         if (other.CompareTag("Pruebadureza"))
         {
+            other.GetComponent<AudioSource>().Play();
             if (other.GetComponent<caracteristicas>().dureza < dureza)
             {
                 Debug.Log("dureza gana");
@@ -41,6 +43,7 @@ public class Pruebas : MonoBehaviour
         }
         if (other.CompareTag("PruebaResistencia"))
         {
+            other.GetComponent<AudioSource>().Play();
             if (other.GetComponent<caracteristicas>().resistencia < resistencia)
             {
                 Debug.Log("resistencia gana");

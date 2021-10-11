@@ -9,7 +9,7 @@ public class CambioColor : MonoBehaviour
     public float g;
     public float red;
     public float green;
-
+    public AudioSource mi_audio;
     void Start()
     {
         //g = -0.8f;
@@ -29,7 +29,15 @@ public class CambioColor : MonoBehaviour
         }
         if (other.tag == "Agua")
         {
+            mi_audio.Play();
             StartCoroutine("Enfriar");
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Agua")
+        {
+            mi_audio.Pause();
         }
     }
     IEnumerator Calentar()
