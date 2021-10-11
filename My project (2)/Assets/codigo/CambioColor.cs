@@ -7,6 +7,7 @@ public class CambioColor : MonoBehaviour
     public SpriteRenderer color;
     public float r;
     public float g;
+    public AudioSource aguaHIrviendo;
 
 
     void Start()
@@ -29,6 +30,15 @@ public class CambioColor : MonoBehaviour
         if (other.tag == "Agua")
         {
             StartCoroutine("Enfriar");
+            aguaHIrviendo.Play();
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Agua")
+        {
+
+            aguaHIrviendo.Pause();
         }
     }
     IEnumerator Calentar()
