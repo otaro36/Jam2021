@@ -607,9 +607,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   daga: {fileID: 11400000, guid: 2785885b34b3cfe449c41ce05dbee8ae, type: 2}
   dagas:
-  - {fileID: 21300000, guid: 60b268fd363dd5f459e29c8b3d8dc8d6, type: 3}
-  - {fileID: 21300000, guid: 321c491b5f1fdfe439b5c002b0afb722, type: 3}
-  - {fileID: 21300000, guid: 01e199f8972ea954ba863c654a635cf5, type: 3}
+  - {fileID: 21300000, guid: fae1b735f228fda4283c20a1497a7daa, type: 3}
+  - {fileID: 21300000, guid: 3501b871fdcaac64883a02bcfff0c9ea, type: 3}
+  - {fileID: 21300000, guid: ce1212f4d4ff72f448f2d046192dceaf, type: 3}
   selector: {fileID: 1984696851}
 --- !u!4 &384752872
 Transform:
