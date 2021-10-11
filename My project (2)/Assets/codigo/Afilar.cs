@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Afilar : MonoBehaviour
 {
-    public Sprite[] cambiosSpra;
+   // public Sprite[] cambiosSpra;
     public DagaSeleccionda filoPrueba;
     public float filo;
     int ca = 0;
@@ -24,7 +24,7 @@ public class Afilar : MonoBehaviour
         if (other.CompareTag("filo"))
         {
             mi_audio.Play();
-            other.GetComponentInParent<SpriteRenderer>().sprite = cambiosSpra[0];
+           //other.GetComponentInParent<SpriteRenderer>().sprite = cambiosSpra[0];
             filo++;
         }
     }

@@ -13,3 +13,8 @@ MonoBehaviour:
   m_Name: DagaSelecionada
   m_EditorClassIdentifier: 
   dagaSeleccionada: 0
+  red: 1
+  green: 0.02
+  resistencia: 13.550034
+  dureza: -67.3995
+  filo: 69

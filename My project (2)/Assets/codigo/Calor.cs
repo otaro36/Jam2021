@@ -33,7 +33,7 @@ public class Calor : MonoBehaviour
         else
         {
             calorOptimo.text="calor optimo: no";
-            dureza-=0.1f;
+           // dureza-=0.001f;
         }
     }
 }

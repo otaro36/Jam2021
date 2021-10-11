@@ -39,7 +39,7 @@ public class Forjado : MonoBehaviour
         if(other.tag=="Martillo")
         {
             golpesrecibidos++;
-            audioMartillo.Play(0);
+            audioMartillo.Play();
         }
     }
     IEnumerator Esperar()

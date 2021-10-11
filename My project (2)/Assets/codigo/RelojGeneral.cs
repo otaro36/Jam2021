@@ -11,6 +11,7 @@ public class RelojGeneral : MonoBehaviour
     public CogerYsoltar scriptCogerySoltar;
     public GameObject panel;
     public Calor calorScript;
+    public GameObject lis;
 
 
 
@@ -34,6 +35,7 @@ public class RelojGeneral : MonoBehaviour
             tiempotxt.text = 0 + ":" + 0;
             scriptCogerySoltar.enabled=false;
             panel.SetActive(true);
+            lis.SetActive(false);
             mensaje.text="tu indice de dureza es "+calorScript.dureza;
 
         }

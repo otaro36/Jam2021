@@ -22,7 +22,7 @@ public class CambioDagas : MonoBehaviour
         if(i==0)
         {
             daga.red=1;
-            daga.green=0.02f;
+            daga.green=0.2f;
         }
         else if (i==1)
         {
@@ -31,8 +31,8 @@ public class CambioDagas : MonoBehaviour
         }
         else if(i==2)
         {
-            daga.red=0.9F;
-            daga.green=0.1f;
+            daga.red=0.6F;
+            daga.green=0.4f;
         }
         
     }

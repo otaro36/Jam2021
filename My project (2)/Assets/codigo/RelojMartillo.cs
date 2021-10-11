@@ -12,7 +12,7 @@ public class RelojMartillo : MonoBehaviour
     public CogerYsoltar scriptCogerySoltar;
     public GameObject panel;
     public Forjado resistencia;
-
+    public GameObject lis;
     void Update()
     {
         CalcularTiempo();
@@ -20,6 +20,8 @@ public class RelojMartillo : MonoBehaviour
         {
             tiempotxt.text = 0 + ":" + 0;
             scriptCogerySoltar.enabled=false;
+           // resistencia.Forjado.enabled = false;
+            lis.SetActive(false);
             panel.SetActive(true);
             mensaje.text="Tu Daga tiene una resistencia de "+ resistencia.resitencia;
         }
