@@ -11,6 +11,8 @@ public class Forjado : MonoBehaviour
         public float resitencia;
         public DagaSeleccionda resistensiaScrit;
 
+        public AudioSource audioMartillo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class Forjado : MonoBehaviour
         if(other.tag=="Martillo")
         {
             golpesrecibidos++;
+            audioMartillo.Play(0);
         }
     }
     IEnumerator Esperar()

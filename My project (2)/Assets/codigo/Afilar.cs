@@ -28,4 +28,8 @@ public class Afilar : MonoBehaviour
             filo++;
         }
     }
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        mi_audio.Pause();
+    }
 }
