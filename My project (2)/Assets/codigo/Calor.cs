@@ -11,7 +11,8 @@ public class Calor : MonoBehaviour
     public SpriteRenderer imagenPrueba;
     public DagaSeleccionda colorDaga;
     public Text calorOptimo;
-    public int entrega;
+    public float dureza;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,15 +24,16 @@ public class Calor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        colorDaga.dureza=dureza;
         if (Comparacion.r > colorDaga.red&&Comparacion.g<colorDaga.green)
         {
             calorOptimo.text="calor optimo: si";
-            entrega=1;
+            dureza+=1;
         }
         else
         {
             calorOptimo.text="calor optimo: no";
-            entrega=2;
+            dureza-=0.1f;
         }
     }
 }

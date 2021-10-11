@@ -11,8 +11,7 @@ public class RelojGeneral : MonoBehaviour
     public CogerYsoltar scriptCogerySoltar;
     public GameObject panel;
     public Calor calorScript;
-    public GameObject entregar;
-    public GameObject reintentar;
+
 
 
     // Start is called before the first frame update
@@ -35,16 +34,8 @@ public class RelojGeneral : MonoBehaviour
             tiempotxt.text = 0 + ":" + 0;
             scriptCogerySoltar.enabled=false;
             panel.SetActive(true);
-            if (calorScript.entrega==1)
-            {
-                entregar.SetActive(true);
-                mensaje.text="Tu Daga es letal";
-            }
-            else if(calorScript.entrega==2)
-            {
-                reintentar.SetActive(true);
-                mensaje.text="Tu Daga no es letal";
-            }
+            mensaje.text="tu indice de dureza es "+calorScript.dureza;
+
         }
     }
     void CalcularTiempo()

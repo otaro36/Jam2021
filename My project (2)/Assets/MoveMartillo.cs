@@ -18,6 +18,14 @@ public class MoveMartillo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        martillo.transform.position=Vector3.MoveTowards(martillo.transform.position,moverHacia,speed*Time.deltaTime);
+               martillo.transform.position=Vector3.MoveTowards(martillo.transform.position,moverHacia,speed*Time.deltaTime);
+        if(martillo.transform.position==golpe.position)
+        {
+                moverHacia=salida.position;
+        }
+        if(martillo.transform.position==salida.position)
+        {
+                moverHacia=golpe.position;
+        }
     }
 }

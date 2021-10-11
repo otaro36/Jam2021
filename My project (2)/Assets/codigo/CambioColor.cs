@@ -7,8 +7,7 @@ public class CambioColor : MonoBehaviour
     public SpriteRenderer color;
     public float r;
     public float g;
-    public float red;
-    public float green;
+
 
     void Start()
     {

@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MenSele.unity
     guid: 93a66cf88fd9d844db2effa26257cff0
   - enabled: 1
-    path: Assets/Scenes/Game_2.unity
+    path: Assets/Scenes/Game_3.unity
     guid: 748d7205ebe136141abee8eb9a6d6db8
   - enabled: 1
-    path: Assets/Scenes/Game_3.unity
-    guid: 43c9265db653d7041b2d9196688da578
+    path: Assets/Scenes/Game_2.unity
+    guid: 109fe66eeccdb3f47963aca33d77a427
+  - enabled: 1
+    path: Assets/Scenes/Game_4.unity
+    guid: 96019c296b01aab4baf0c5dd3119753c
+  - enabled: 1
+    path: Assets/Scenes/Game_5.unity
+    guid: 74c16fef79f2d3344a7541e3099cbf41
   m_configObjects: {}
